@@ -14,6 +14,7 @@
 		FA4947382938E1B700C83269 /* bundle_display_name_localization_ios15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4947372938E1B700C83269 /* bundle_display_name_localization_ios15Tests.swift */; };
 		FA4947422938E1B700C83269 /* bundle_display_name_localization_ios15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4947412938E1B700C83269 /* bundle_display_name_localization_ios15UITests.swift */; };
 		FA4947442938E1B700C83269 /* bundle_display_name_localization_ios15UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4947432938E1B700C83269 /* bundle_display_name_localization_ios15UITestsLaunchTests.swift */; };
+		FA4947582938E46300C83269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA49475A2938E46300C83269 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		FA49473D2938E1B700C83269 /* bundle-display-name-localization-ios15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bundle-display-name-localization-ios15UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4947412938E1B700C83269 /* bundle_display_name_localization_ios15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bundle_display_name_localization_ios15UITests.swift; sourceTree = "<group>"; };
 		FA4947432938E1B700C83269 /* bundle_display_name_localization_ios15UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bundle_display_name_localization_ios15UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA49475D2938E75F00C83269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA49475E2938E9CE00C83269 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		FA4947252938E1B500C83269 /* bundle-display-name-localization-ios15 */ = {
 			isa = PBXGroup;
 			children = (
+				FA49475A2938E46300C83269 /* InfoPlist.strings */,
 				FA4947262938E1B500C83269 /* bundle_display_name_localization_ios15App.swift */,
 				FA4947282938E1B500C83269 /* ContentView.swift */,
 				FA49472A2938E1B700C83269 /* Assets.xcassets */,
@@ -211,8 +215,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				uk,
 			);
 			mainGroup = FA49471A2938E1B500C83269;
 			productRefGroup = FA4947242938E1B500C83269 /* Products */;
@@ -232,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA49472E2938E1B700C83269 /* Preview Assets.xcassets in Resources */,
+				FA4947582938E46300C83269 /* InfoPlist.strings in Resources */,
 				FA49472B2938E1B700C83269 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +300,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FA49475A2938E46300C83269 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA49475D2938E75F00C83269 /* en */,
+				FA49475E2938E9CE00C83269 /* uk */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FA4947452938E1B700C83269 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -359,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -420,6 +440,9 @@
 				DEVELOPMENT_TEAM = 4MQ8U74VYC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bundle-display-name-localization-ios15/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ukrainian (default)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +472,9 @@
 				DEVELOPMENT_TEAM = 4MQ8U74VYC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bundle-display-name-localization-ios15/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ukrainian (default)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

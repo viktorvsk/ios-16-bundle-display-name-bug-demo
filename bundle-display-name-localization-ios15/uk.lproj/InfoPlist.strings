@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  bundle-display-name-localization-ios15
+
+  Created by Viktor Vsk on 12/1/22.
+  
+*/
+CFBundleDisplayName = "Ukrainian";
